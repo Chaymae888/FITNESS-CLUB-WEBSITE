@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FITNESS CLUB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="cc-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand text-uppercase fw-bolder mx-4 py-3" href="#">FITNESS CLUB</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-4 ">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#">A propos</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" >les actualités</a>
+              </li>          
+              <li class="nav-item pe-4">
+                <button onclick="redirectToLink1()" class="btn btn-order rounded-0" >abonnez-vous</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="banner d-flex justify-content-center align-items-center pt-5">
+        <div class="container  py-5">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 "><h1 class="test-capitalize py-3 figtree banner-desc">un club dédié à l'épanouissement sportif et à la création d'une communauté dynamique.</h1>
+                <p>
+                    <button onclick="redirectToLink1()" class="btn btn-order btn-lg me-3 rounded-0 figtree">rejoignez-nous maintenant</button>
+                    <button onclick="redirectToLink2()" class="btn btn-order btn-lg rounded-0 figtree">accéder à votre compte</button>
+                </p></div>
+            </div>
+        </div>
+      </section>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <script>
+        function redirectToLink1(){
+            window.location.href="signup.html";
+        }
+        function redirectToLink2(){
+            window.location.href="login.html";
+        }
+    </script>
+  </body>
+</html>

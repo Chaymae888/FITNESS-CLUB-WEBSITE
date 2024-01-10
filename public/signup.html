@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FITNESS CLUB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet"  href="./signup.css">
+  </head>
+  <body>
+    <nav class="cc-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand text-uppercase fw-bolder mx-4 py-3" href="#">FITNESS CLUB</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-4 ">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" href="#">A propos</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link" >les actualités</a>
+              </li>          
+              <li class="nav-item pe-4">
+                <button onclick="redirectToLink1()" class="btn btn-order rounded-0" >abonnez-vous</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+    <section class="formulaire  d-flex justify-content-center align-items-center py-5">
+        <div class="container ">
+            <h2 class="figtree text-center text-light mb-4 text-uppercase ">rejoignez-nous</h2>
+            <form action="/signup" method="post" >
+                <div class="row " >
+                    <div class="col-md-6 col-sm">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                            <input type="text" name="name" class="form-control" placeholder="Votre nom" >
+                        </div>
+                    </div> 
+                    <div class="col-md-6 col-sm">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                            <input type="text" name="prenoun" class="form-control" placeholder="Votre prenom" >
+                          </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01" id="basic-addon1"><i class="fas fa-user"></i></label>
+                        <select class="form-select"  id="inputGroupSelect01" name="selectedGender">
+                          <option selected >Votre genre</option>
+                          <option value="1">Female</option>
+                          <option value="2">Male</option>
+                        </select>
+                        
+                    </div>
+                    <div class="col-md-6 col-sm">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-at"></i></span>
+                            <input type="email" name="email" class="form-control" placeholder="Votre email" >
+                          </div>
+                    </div>  
+                    <div class="col-md-6 col-sm">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+                            <input type="password" name="password" class="form-control" placeholder="Votre mot de passe" >
+                          </div>
+                    </div>  
+                    <input type="submit" class="btn btn-outline-info btn-lg rounded-0 figtree">créez votre compte</button>
+                <div class="row"></div>
+            </form>
+        </div>    
+    </section>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <script>
+         function redirectToLink1(){
+            window.location.href="signup.html";
+        }
+    </script>
+  </body>
+</html>
